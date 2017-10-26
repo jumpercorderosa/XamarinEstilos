@@ -20,7 +20,7 @@ namespace XF.Recursos.Theme
 
         public static readonly BindableProperty HeaderFIAPProperty = BindableProperty.Create("HeaderFIAP", typeof(string), typeof(ThemeView), null);
         public static readonly BindableProperty FooterFIAPProperty = BindableProperty.Create("FooterFIAP", typeof(string), typeof(ThemeView), null);
-
+        
         public string HeaderFIAP
         {
             get { return (string)GetValue(HeaderFIAPProperty); }
