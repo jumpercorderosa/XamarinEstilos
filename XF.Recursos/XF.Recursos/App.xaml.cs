@@ -13,7 +13,8 @@ namespace XF.Recursos
         {
             InitializeComponent();
 
-            MainPage = new XF.Recursos.MainPage();
+            //habilita a navegacao entre as paginas
+            MainPage = new NavigationPage(new XF.Recursos.MainPage());
         }
 
         protected override void OnStart()

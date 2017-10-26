@@ -1,11 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:XF.Recursos"
              x:Class="XF.Recursos.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label FontSize="20" Text="Style Resources"></Label>
+                <Button x:Name="btnSimples" Text="Estilo padrão" Clicked="btnSimples_Clicked"></Button>
+                <Button x:Name="btnGlobal" Text="Estilo Global" Clicked="btnGlobal_Clicked"></Button>
+                <Button x:Name="btnDinamico" Text="Estilo dinâmico" Clicked="btnDinamico_Clicked"></Button>
+                <Button x:Name="btnTriggers" Text="Estilo event triggres" Clicked="btnTriggers_Clicked"></Button>
+                <Label FontSize="20" Text="TemplatedPage"></Label>
+                <Button x:Name="btnTemplate" Text="TemplatedPage" Clicked="btnTemplate_Clicked"></Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
 
 </ContentPage>

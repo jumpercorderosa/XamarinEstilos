@@ -13,5 +13,31 @@ namespace XF.Recursos
         {
             InitializeComponent();
         }
+
+        //code behind
+        private async void btnSimples_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Estilo.SimplesPage());
+        }
+
+        private async void btnGlobal_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Estilo.GeralView());
+        }
+
+        private async void btnDinamico_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Estilo.DinamicoView());
+        }
+
+        private async void btnTriggers_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Estilo.TriggersView());
+        }
+
+        private async void btnTemplate_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Theme.ThemeView());
+        }
     }
 }
